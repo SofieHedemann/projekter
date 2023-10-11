@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="stylesheet.css" />
+    <link rel="stylesheet" href="darkmode.css" />
+    <title>Forside</title>
+  </head>
+  <body class="background">
+    <main class="main">
+      <section class="icons --trash">
+        <img class="icons__images" src="icons/emptytrash.png" alt="" />
+        <p>Trash</p>
+      </section>
+      <section class="icons --web">
+        <img class="icons__images" src="icons/web.png" alt="" />
+        <p>Internet Explorer</p>
+      </section>
+      <section class="icons --notepad">
+        <img class="icons__images" src="icons/notepad.png" alt="" />
+        <p>Notepad</p>
+      </section>
+      <section class="icons --folder">
+        <img class="icons__images" src="icons/folder.png" alt="" />
+        <p>random folder</p>
+      </section>
+      <section class="icons --calculator">
+        <img class="icons__images" src="icons/calculator.png" alt="" />
+        <p>Calculator</p>
+      </section>
+
+      <article class="app makeDraggable --calculatorBrowser">
+        <section class="app__header">
+          <section class="app__header--description">
+            <img class="app__img" src="icons/calculator.png" alt="" />
+            <p class="app__headerBody">Calculator</p>
+          </section>
+          <section class="app__buttons">
+            <button class="app__btn --minimise"></button>
+            <button class="app__btn --maximise"></button>
+            <button class="app__btn --close"></button>
+          </section>
+        </section>
+
+        <article class="calculator__app">
+          <section class="calculator__text">
+            <p class="calculator__body">Edit</p>
+            <p class="calculator__body">View</p>
+            <p class="calculator__body">Help</p>
+          </section>
+          <section class="border__text">
+            <div class="border"></div>
+            <div class="border"></div>
+            <div class="border"></div>
+          </section>
+  
+          <form class="form" name="form">
+              <section class="inputfield">
+                  <input type="text" class="field" name="answer">
+              </section>
+        
+                <article class="keypad">
+                  <section class="key-row">
+                    <div class="inset-button"></div>
+                    <button class="key-large --action">Backspace</button>
+                    <input class="key-large --action" type = "button" value = "CE" onclick = "form.answer.value = ' ' " id= "clear" >
+                    <input class="key-large --action" type = "button" value = "C" onclick = "form.answer.value = ' ' " id= "clear" >
+                  </section>
+        
+                  <section class="key-col --m">
+                    <button class="key --action">MC</button>
+                    <button class="key --action">MR</button>
+                    <button class="key --action">MS</button>
+                    <button class="key --action">M+</button>
+                  </section>
+        
+                  <section class="key-col">
+                    <input class="key" type = "button" value = "7" onclick = "form.answer.value += '7' ">
+                    <input class="key" type = "button" value = "4" onclick = "form.answer.value += '4' ">
+                    <input class="key" type = "button" value = "1" onclick = "form.answer.value += '1' ">
+                    <input class="key" type = "button" value = "0" onclick = "form.answer.value += '0' ">
+                  </section>
+        
+                  <section class="key-col">
+                      <input class="key" type = "button" value = "8" onclick = "form.answer.value += '8' ">
+                      <input class="key" type = "button" value = "5" onclick = "form.answer.value += '5' ">
+                      <input class="key" type = "button" value = "2" onclick = "form.answer.value += '2' ">
+                      <input class="key --action" type = "button" value = "+/-" onclick = "form.answer.value += '+/-' ">
+                  </section>
+        
+                  <section class="key-col">
+                      <input class="key" type = "button" value = "9" onclick = "form.answer.value += '9' ">
+                      <input class="key" type = "button" value = "6" onclick = "form.answer.value += '6' ">
+                      <input class="key" type = "button" value = "3" onclick = "form.answer.value += '3' ">
+                      <input class="key dot" type = "button" value = "." onclick = "form.answer.value += '.' ">
+                  </section>
+                  
+                  <section class="key-col">
+                      <input class="key --action" type = "button" value = "/" onclick = "form.answer.value += '/' ">
+                      <input class="key --action" type = "button" value = "*" onclick = "form.answer.value += '*' ">
+                      <input class="key --action" type = "button" value = "-" onclick = "form.answer.value += '-' ">
+                      <input class="key --action" type = "button" value = "+" onclick = "form.answer.value += '+' ">
+                  </section>
+                  
+                  <section class="key-col">
+                      <input class="key" type = "button" value = "sqrt" onclick = "form.answer.value += 'sqrt' ">
+                      <input class="key" type = "button" value = "%" onclick = "form.answer.value += '%' ">
+                      <input class="key" type = "button" value = "1/x" onclick = "form.answer.value += '1/x' ">
+                      <input class="key --action" type = "button" value = "=" onclick = "form.answer.value = eval(form.answer.value) ">
+                  </section>
+                </article>
+          </form>
+          
+        </article>
+
+      <article class="app makeDraggable --webBrowser">
+        <section class="app__header">
+          <section class="app__header--description">
+            <img class="app__img" src="icons/web.png" alt="" />
+            <p>Google - Windows Internet Explorer</p>
+          </section>
+          <section class="app__buttons">
+            <button class="app__btn --minimise"></button>
+            <button class="app__btn --maximise"></button>
+            <button class="app__btn --close"></button>
+          </section>
+        </section>
+
+        <article class="browser">    
+          <section class="google">
+            <section class="google__letters">
+              <span class="--blue">G</span>
+              <span class="--red">o</span>
+              <span class="--yellow">o</span>
+              <span class="--blue">g</span>
+              <span class="--green">l</span>
+              <span class="--red">e</span>
+            </section>
+
+            <section class="google__search">
+              <input class="search" type="search" name="" id="">
+              <img src="" alt="">
+            </section>
+
+            <section>
+              <button class="google__btn">Google Search</button>
+              <button class="google__btn">I'm Feeling Lucky</button>
+            </section>
+          </section>
+
+        </article>
+      </article>
+    </main>
+
+    <article class="start__app">
+      <section class="user">
+        <img class="user__image" src="images/moomin.png" alt="">
+      </section>
+
+      <article class="start__appsArea">
+        <section class="apps">
+          <section class="apps__icons">
+            <section class="app__icon">
+              <img class="app__iconImg" src="icons/web.png" alt="">
+              <section>
+                <p class="app__iconBody">Internet</p>
+                <h5>Internet Explorer</h5>
+              </section>
+            </section>
+  
+            <section class="app__icon">
+              <img class="app__iconImg" src="icons/mail.png" alt="">
+              <section>
+                <p class="app__iconBody">E-Mail</p>
+                <h5>Outlook Express</h5>
+              </section>
+            </section>
+  
+            <section class="app__icon">
+              <img class="app__iconImg" src="icons/calculator.png" alt="">
+              <p class="app__iconBody">Calculator</p>
+            </section>
+          </section>
+
+          <section class="apps__all">
+            <p class="app__programmes">All Programmes</p>
+            <img src="icons/arrow.png" alt="">
+          </section>
+        </section>
+
+        <section class="folders">
+            <section class="apps__icons">
+              <section class="app__icon">
+                <img class="app__iconImg" src="icons/folder_home.png" alt="">
+                <p class="app__iconBody">My Documents</p>
+              </section>
+
+              <section class="app__icon">
+                <img class="app__iconImg" src="icons/folder-images.png" alt="">
+                <p class="app__iconBody">My Images</p>
+              </section>
+              
+              <section class="app__icon">
+                <img class="app__iconImg" src="icons/folder-music.png" alt="">
+                <p class="app__iconBody">My Music</p>
+              </section>
+            </section>
+        <section>
+      </article>
+
+      <section class="suspend">
+        <section class="suspend__body">
+          <a href="index.html">
+            <img class="suspend__image" src="icons/system-suspend.png" alt="">
+            Log off
+          </a>
+        </section>
+        <section class="suspend__body">
+          <a href="../index.html">
+            <img class="suspend__image" src="icons/system-shutdown.png" alt="">
+            Turn Off Computer
+          </a>
+        </section>
+      </section>
+
+    </article>
+
+    <!-- ret dette til så der bliver brugt en footer i stedet -->
+    <footer class="footer__start">
+      <section class="footer__startAppArea">
+        <button class="footer__startBtn">
+          <img class="footer__startImg" src="icons/start-here.png" alt="" />
+          Start
+        </button>
+
+        <section class="footer__area">
+          <section class="footer__app --active">
+            <img class="footer__appImg" src="icons/web.png" alt="" />
+            <p class="footer__appBody">Internet</p>
+          </section>
+          <section class="footer__app footer__calculator">
+            <img class="footer__appImg" src="icons/calculator.png" alt="" />
+            <p class="footer__appBody">Calculator</p>
+          </section>
+        </section>
+      </section>
+
+      <section class="footer__startTime">
+        <div class="circle"></div>
+        <p class="footer__startTimeBody">Klokken</p>
+      </section>
+    </footer>
+
+    <script src="draggability.js" defer></script>
+    <script src="resizeWidthHeight.js" defer></script>
+    <script src="start.js" defer></script>
+  </body>
+</html>
