@@ -5,30 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="stylesheet.css" />
     <link rel="stylesheet" href="darkmode.css" />
+    <link rel="icon" type="image/png" href="/images/favicon.png"> 
     <title>Forside</title>
   </head>
   <body class="background">
     <main class="main">
-      <section class="icons --trash">
-        <img class="icons__images" src="icons/emptytrash.png" alt="" />
-        <p>Trash</p>
-      </section>
-      <section class="icons --web">
-        <img class="icons__images" src="icons/web.png" alt="" />
-        <p>Internet Explorer</p>
-      </section>
-      <section class="icons --notepad">
-        <img class="icons__images" src="icons/notepad.png" alt="" />
-        <p>Notepad</p>
-      </section>
-      <section class="icons --folder">
-        <img class="icons__images" src="icons/folder.png" alt="" />
-        <p>random folder</p>
-      </section>
-      <section class="icons --calculator">
-        <img class="icons__images" src="icons/calculator.png" alt="" />
-        <p>Calculator</p>
-      </section>
+
+      <article class="main-grid drag-container drag-n-drop__zone">
+          <section class="icons --trash" draggable="true">
+            <img class="icons__images" src="icons/emptytrash.png" alt="" />
+            <p>Trash</p>
+          </section>
+          <section class="icons --web" draggable="true">
+            <img class="icons__images" src="icons/web.png" alt="" />
+            <p>Internet Explorer</p>
+          </section>
+          <section class="icons --notepad" draggable="true">
+            <img class="icons__images" src="icons/notepad.png" alt="" />
+            <p>Notepad</p>
+          </section>
+          <section class="icons --folder" draggable="true">
+            <img class="icons__images" src="icons/folder.png" alt="" />
+            <p>random folder</p>
+          </section>
+          <section class="icons --calculator" draggable="true">
+            <img class="icons__images" src="icons/calculator.png" alt="" />
+            <p>Calculator</p>
+          </section>
+
+          <!-- empty boxes -->
+          <section class="emptybox">
+            <img class="icons__images" src="" alt="" />
+            <p></p>
+          </section>
+          
+
+      </article>
+
 
       <article class="app makeDraggable --calculatorBrowser">
         <section class="app__header">
@@ -276,6 +289,7 @@
       </section>
     </footer>
 
+    <script src="draganddrop.js" defer></script>
     <script src="draggability.js" defer></script>
     <script src="resizeWidthHeight.js" defer></script>
     <script src="start.js" defer></script>
