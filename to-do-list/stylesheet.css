@@ -24,7 +24,7 @@ h1 {
 }
 
 h2 {
-    margin-bottom: 1.5rem;
+    margin-bottom: .75rem;
 }
 
 li {
@@ -37,29 +37,47 @@ main {
     margin-bottom: 2rem;
 }
 
-input {
-    margin-bottom: 1.75rem;
-    padding: 0;
-
+.toDoInput{
+    padding: .5rem;
+    
+    border-radius: .5rem;
     border: none;
-    border-bottom: solid rgba(30,30,30, .5) 1px;
-
+    
     width: 550px;
     height: 24px;
-}
 
-.toDoInput{
-    width: 100%;
-
-    background-color: rgba(245, 245, 245,.9);
+    background-color: rgba(245, 245, 245,.8);
 }
 
 .checkbox {
+    appearance: none; /* fjerner browserens default stil */
+    -webkit-appearance: none; /* Safari */
+    -moz-appearance: none; /* Firefox */
+
     margin-right: .5rem;
+
+    border-radius: .25rem;
+    border: none;
+    background-color: rgba(245, 245, 245,.8);
+
     cursor: pointer;
     width: 1.5rem;
     height: 1.5rem;
 }
+
+.checkbox:checked {
+    background-color: rgb(111, 212, 111);
+    border-color: green;
+}
+
+.checkbox:checked::after {
+  content: "✔";
+  color: rgb(59, 82, 59);
+  font-size: 1rem;
+  display: block;
+  text-align: center;
+}
+
 
 .toDoList, .doneList, .totallyDoneItems {
     width: 600px;
