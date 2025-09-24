@@ -4,7 +4,8 @@
 }
 
 body{
-    background-color:  	#f4efe3;
+    background: url('https://w0.peakpx.com/wallpaper/310/987/HD-wallpaper-pixel-aesthetic-384x2160-pixel.jpg');
+    background-size: cover;
     font-family: Arial, Helvetica, sans-serif;
     width: 100vw;
     height: 100vh;
@@ -12,8 +13,10 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 
     text-align: center;
+    color: #fefefe;
 }
 
 h1 {
@@ -24,6 +27,12 @@ h2 {
     margin-bottom: 1.5rem;
 }
 
+li {
+    list-style: none;
+    display:flex;
+    width: 100%;
+}
+
 main {
     margin-bottom: 2rem;
 }
@@ -31,14 +40,18 @@ main {
 input {
     margin-bottom: 1.75rem;
     padding: 0;
-    
-    background-color: transparent;
 
     border: none;
     border-bottom: solid rgba(30,30,30, .5) 1px;
 
     width: 550px;
     height: 24px;
+}
+
+.toDoInput{
+    width: 100%;
+
+    background-color: rgba(245, 245, 245,.9);
 }
 
 .checkbox {
@@ -48,9 +61,12 @@ input {
     height: 1.5rem;
 }
 
-form {
+.toDoList, .doneList, .totallyDoneItems {
+    width: 600px;
     padding: 1rem;
     margin-bottom: 2rem;
     border: dashed .25rem rgb(33, 33, 33);
     border-radius: 1rem;
+    background-color: rgba(25,25,25, .5);
+    backdrop-filter: blur(24px);
 }

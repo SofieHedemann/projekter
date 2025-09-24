@@ -13,34 +13,34 @@
         <h2>Lets start doing!</h2>
     </main>
 
-        <form action="">
-            <h2>Add your to do items here and check em off when done!</h2>
-            <section>
+    <article>
+        <ul class="toDoList">   
+            <h2>Add your to do items here</h2>
+
+            <li>
+                <input class="toDoInput" type="text">
+            </li>
+        </ul>
+
+
+        <ul class="doneList">
+            <h2>Check em off when done here</h2>
+            <li>
                 <input class="checkbox" type="checkbox" name="checkbox"/>
-                <input type="text">
-            </section>
-            <section>
-                <input class="checkbox" type="checkbox" name="checkbox"/>
-                <input type="text">
-            </section>
-            <section>
-                <input class="checkbox" type="checkbox" name="checkbox"/>
-                <input type="text">
-            </section>
-            <section>
-                <input class="checkbox" type="checkbox" name="checkbox"/>
-                <input type="text">
-            </section>
-            <section>
-                <input class="checkbox" type="checkbox" name="checkbox"/>
-                <input type="text">
-            </section>
-        </form>
+                <p>Check me off as a test</p>
+            </li>
+        </ul>
+
+    </article>
 
     
-    <section>
+    <section class="totallyDoneItems">
         <h2>Here your checked off items will end up...</h2>
         <p>Think of it like a cemetary for your notes, I suppose. </p>
+        
+        <section class="checkedOffItems">
+            <!-- Append new child elements here? or move input down here when checked off? idk man -->
+        </section>
     </section>
 
     <script src="script.js"></script>
