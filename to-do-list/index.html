@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="stylesheet.css">
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg'><text y='32' font-size='32'>🦙</text></svg>">
+    <link rel="icon" href="data:image/svg+xml, <svg xmlns='http://www.w3.org/2000/svg'> <text y='32' font-size='32'>🦙</text></svg>">
     <title>To Do List</title>
 </head>
 <body>
@@ -19,18 +19,18 @@
         <ul class="toDoList">   
 
             <li>
-                <input class="toDoInput" type="text">
-                <button class="addButton">Add</button>
+                <input class="toDoInput" type="text" placeholder="Add your to do item here..."/>
+                <button onclick="addTask()" class="addButton">Add</button>
             </li>
         </ul>
 
 
         <h2>Check em off when done here</h2>
         <ul class="doneList">
-            <li>
+            <li class="listItem">
                 <input class="checkbox" type="checkbox" name="checkbox"/>
                 <p class="checkboxBody">Check me off as a test</p>
-                <p class="close">x</p>
+                <p class="close deleteBtn">x</p>
             </li>
         </ul>
 
